@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryAccent">#FFBB86FC</color>
+    <color name="colorPrimary">#FF6200EE</color>
+    <color name="colorPrimaryDark">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#ff3333</color>
+    <color name="yellow">#ffd633</color>
+    <color name="green">#008000</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="darkGray">#858484</color>
+    <color name="lightGray">#F5F5F5</color>
+    <color name="darkerGray">#484848</color>
+
+    //Custom Chip color
+    <color name="checkChipBackgroundColor">#206200EE</color>
+    <color name="chipBackgroundColor">@color/lightGray</color>
+    <color name="checkedChipTextColor">@color/colorPrimary</color>
+    <color name="chipTextColor">@color/darkGray</color>
+
+    <color name="cardStrokeColor">@color/darkGray</color>
+
+    <color name="statusBarColor">@color/colorPrimaryDark</color>
+    <color name="contextualStatusBarColor">@color/darkGray</color>
+    <color name="contextualActionModeColor">@color/darkerGray</color>
+
+    <color name="cardBackgroundColor">@color/white</color>
+    <color name="cardLightBackgroundColor">#106200EE</color>
+
+    <color name="background">#F0F0F0</color>
+
+</resources>

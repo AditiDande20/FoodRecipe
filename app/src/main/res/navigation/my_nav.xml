@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/receipeFragment">
+
+    <fragment
+        android:id="@+id/receipeFragment"
+        android:name="com.mobile.foodreceipe.fragments.ReceipeFragment"
+        android:label="Recipes"
+        tools:layout="@layout/fragment_receipe" >
+        <action
+            android:id="@+id/action_receipeFragment_to_recipeBottomSheetFragment"
+            app:destination="@id/recipeBottomSheetFragment" />
+        <argument
+            android:name="backFromBottomSheet"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_receipeFragment_to_detailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteReceipeFragment"
+        android:name="com.mobile.foodreceipe.fragments.FavoriteReceipeFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorite_receipe" >
+        <action
+            android:id="@+id/action_favoriteReceipeFragment_to_detailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodJokeFragment"
+        android:name="com.mobile.foodreceipe.fragments.FoodJokeFragment"
+        android:label="Jokes"
+        tools:layout="@layout/fragment_food_joke" />
+    <dialog
+        android:id="@+id/recipeBottomSheetFragment"
+        android:name="com.mobile.foodreceipe.fragments.RecipeBottomSheetFragment"
+        android:label="recipe_bottom_sheet"
+        tools:layout="@layout/recipe_bottom_sheet" >
+        <action
+            android:id="@+id/action_recipeBottomSheetFragment_to_receipeFragment"
+            app:destination="@id/receipeFragment"
+            app:popUpTo="@id/receipeFragment" />
+    </dialog>
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.mobile.foodreceipe.activity.DetailActivity"
+        android:label="Details"
+        tools:layout="@layout/activity_detail" >
+        <argument
+            android:name="result"
+            app:argType="com.mobile.foodreceipe.models.Result" />
+    </activity>
+</navigation>
